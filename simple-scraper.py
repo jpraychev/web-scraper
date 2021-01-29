@@ -11,7 +11,8 @@ def get_data(html_page):
 
     outputHead = []
     for th in soup.find_all('th'):
-        outputHead.append(th.text)
+        outputHead.append(th)
+        print(outputHead)
 
     outputRows = []
     for tr in soup.find_all('tr'):
